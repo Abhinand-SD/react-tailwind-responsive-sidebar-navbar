@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-const Dashboard = () => {
+const Dashboard = ({sidebarToggle, setSidebarToggle}) => {
   return (
-    <div>
-    <Navbar />
+    <div className={`${sidebarToggle ? "ml-64" : ""} flex-1`}>
+      <Navbar sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle}/>
     </div>
   )
 }
