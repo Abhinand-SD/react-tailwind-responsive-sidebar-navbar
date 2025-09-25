@@ -4,7 +4,7 @@ import { FaCog, FaHome, FaPoll, FaRegEnvelope, FaRegFileAlt } from "react-icons/
 
 const Slidebar = ({sidebarToggle}) => {
     return (
-        <div className={`${sidebarToggle ? "block" : "hidden"} fixed w-64 bg-gray-800 h-full px-4 py-2`}>
+        <div className={`${sidebarToggle ? "block" : "hidden"}  fixed w-64 bg-gray-800 h-full px-4 py-2`}>
             <div className='my-2 mb-4'>
                 <h1 className='text-2xl text-white font-bold'>Admin Dashboard</h1>
             </div>

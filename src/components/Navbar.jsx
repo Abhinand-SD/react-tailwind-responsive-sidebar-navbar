@@ -12,8 +12,8 @@ const Navbar = ({sidebarToggle, setSidebarToggle}) => {
       <div className='flex items-center gap-x-5'>
         <div className='relative md:w-65'>
           <span className='relative md:absolute inset-y-0 left-0 flex items-center pl-2'>
-            <button className='p-1 focus:outline-none text-white md:text-back'><FaSearch /></button></span>
-          <input type='text' className='w-full px-4 py-1 pl-12 rounded shadow outline-none hidden md:block' />
+            <button className='p-1 focus:outline-none md:text-back'><FaSearch /></button></span>
+          <input type='text'  placeholder="Search..."  className='w-full text-black bg-white px-4 py-1 pl-12 rounded shadow outline-none hidden md:block' />
         </div>
 
         <div className='text-white'><FaBell className='w-6 h-6' /></div>
@@ -21,7 +21,7 @@ const Navbar = ({sidebarToggle, setSidebarToggle}) => {
         <div className='relative'>
           <button className='text-white group'>
             <FaUserCircle className='w-6 h-6 mt-1' />
-            <div className='z-10 hidden bg-white  absolute rounded-lg shadow w-32 group-focus:block top-full right-0'>
+            <div className='z-10 hidden bg-white absolute rounded-lg shadow w-32 group-focus:block top-full right-0'>
               <ul className='py-2 text-sm text-gray-950'>
                 <li><a href=''>Profile</a></li>
                 <li><a href=''>Setting</a></li>
